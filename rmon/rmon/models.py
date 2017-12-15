@@ -8,7 +8,6 @@ db = SQLAlchemy()
 class Server(db.Model):
     __tablename__ = 'redis_server'
     __table_args__ = {'mysql_charset': 'utf8'}
-
     id = db.Column(db.Integer, primary_key=1)
     name = db.Column(db.String(64), unique=1)
     desc = db.Column(db.String(512))

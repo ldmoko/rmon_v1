@@ -5,6 +5,7 @@ from flask.views import MethodView
 class IndexView(MethodView):
 
     def get(self):
-        return render_template('index.html')
+        # return render_template('index.html')
+        return 'hello'
 
 
